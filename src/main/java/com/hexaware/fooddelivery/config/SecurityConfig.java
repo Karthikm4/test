@@ -41,11 +41,11 @@ public class SecurityConfig {
         http.csrf().disable()
             .authorizeRequests()
                 .requestMatchers(
-                		"/api/admin/authenticate",
-                		"/api/admin/addAdmin",
-                    "/customers/addCustomer",
+                		"/api/Admin/authenticate",
+                		"/api/Admin/addAdmin",
+                    "/api/customers/addCustomers",
                     
-                    "/cart/addCart",
+                    "/api/cart/addCart",
                     "/Menu/addMenu",
                     "/Orders/addOrders",
                     "/Restaurants/addRestaurants",
@@ -59,7 +59,7 @@ public class SecurityConfig {
                 .requestMatchers(
                     "/cart/**",
                     "/api/Admin/**",
-                    "/customers/**",
+                    "/api/customers/**",
                     "/Menu/**",
                     "/Orders/**",
                     "/Restaurants/**"

@@ -19,7 +19,7 @@ import com.hexaware.fooddelivery.service.ICartService;
 
 import jakarta.validation.Valid;
 @RestController
-@RequestMapping("/cart")
+@RequestMapping("/api/cart")
 public class CartController {
 	@Autowired
 	ICartService service;

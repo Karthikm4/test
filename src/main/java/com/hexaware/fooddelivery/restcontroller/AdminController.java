@@ -25,9 +25,16 @@ import jakarta.validation.Valid;
 @RequestMapping("/api/Admin")
 public class AdminController {
 	@Autowired
-	IAdminService service;
+	private IAdminService service;
 	
 	
+	
+	
+	public AdminController(IAdminService service) {
+		super();
+		this.service = service;
+	}
+
 	@PostMapping("/addAdmin")
 	public Admin addAdmin(@Valid @RequestBody AdminDTO adminDTO) {
 		
